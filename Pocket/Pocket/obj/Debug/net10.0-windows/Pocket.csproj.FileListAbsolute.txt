@@ -1,0 +1,17 @@
+D:\VSProjeler\Pocket\Pocket\bin\Debug\net10.0-windows\Pocket.exe
+D:\VSProjeler\Pocket\Pocket\bin\Debug\net10.0-windows\Pocket.deps.json
+D:\VSProjeler\Pocket\Pocket\bin\Debug\net10.0-windows\Pocket.runtimeconfig.json
+D:\VSProjeler\Pocket\Pocket\bin\Debug\net10.0-windows\Pocket.dll
+D:\VSProjeler\Pocket\Pocket\bin\Debug\net10.0-windows\Pocket.pdb
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.Form1.resources
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.csproj.GenerateResource.cache
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.AssemblyInfoInputs.cache
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.AssemblyInfo.cs
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.csproj.CoreCompileInputs.cache
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.dll
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\refint\Pocket.dll
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.pdb
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.genruntimeconfig.cache
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\ref\Pocket.dll
+D:\VSProjeler\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.Form2.resources
