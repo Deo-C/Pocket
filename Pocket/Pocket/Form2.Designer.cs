@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             button2 = new Button();
             button1 = new Button();
             button5 = new Button();
@@ -40,34 +41,46 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            buttonMin = new Button();
+            buttonClose = new Button();
+            panel1 = new Panel();
+            lblName = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // button2
             // 
-            button2.Location = new Point(127, 12);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(107, 545);
             button2.Name = "button2";
-            button2.Size = new Size(110, 29);
+            button2.Size = new Size(61, 48);
             button2.TabIndex = 0;
-            button2.Text = "Bilgi";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(11, 12);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.Location = new Point(49, 545);
             button1.Name = "button1";
-            button1.Size = new Size(110, 29);
+            button1.Size = new Size(52, 48);
             button1.TabIndex = 1;
-            button1.Text = "Ana Menü";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(243, 12);
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Image = (Image)resources.GetObject("button5.Image");
+            button5.Location = new Point(174, 545);
             button5.Name = "button5";
-            button5.Size = new Size(110, 29);
+            button5.Size = new Size(57, 48);
             button5.TabIndex = 4;
-            button5.Text = "Düzenle";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
@@ -162,13 +175,66 @@
             label3.TabIndex = 10;
             label3.Text = "Hoşgeldiniz!";
             // 
+            // buttonMin
+            // 
+            buttonMin.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonMin.FlatAppearance.BorderSize = 0;
+            buttonMin.FlatStyle = FlatStyle.Flat;
+            buttonMin.Image = (Image)resources.GetObject("buttonMin.Image");
+            buttonMin.Location = new Point(511, 3);
+            buttonMin.Name = "buttonMin";
+            buttonMin.Size = new Size(39, 35);
+            buttonMin.TabIndex = 0;
+            buttonMin.UseVisualStyleBackColor = true;
+            buttonMin.Click += buttonMin_Click;
+            // 
+            // buttonClose
+            // 
+            buttonClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonClose.FlatAppearance.BorderSize = 0;
+            buttonClose.FlatStyle = FlatStyle.Flat;
+            buttonClose.Image = (Image)resources.GetObject("buttonClose.Image");
+            buttonClose.Location = new Point(556, 3);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(39, 35);
+            buttonClose.TabIndex = 0;
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.Controls.Add(buttonMin);
+            panel1.Controls.Add(lblName);
+            panel1.Controls.Add(buttonClose);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(598, 46);
+            panel1.TabIndex = 12;
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            lblName.Location = new Point(12, 8);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(64, 25);
+            lblName.TabIndex = 11;
+            lblName.Text = "Pocket";
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(598, 571);
+            BackColor = Color.FromArgb(64, 64, 64);
+            ClientSize = new Size(598, 605);
+            Controls.Add(panel1);
             Controls.Add(label2);
+            Controls.Add(button5);
+            Controls.Add(button2);
             Controls.Add(label3);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(button10);
             Controls.Add(button9);
@@ -176,15 +242,15 @@
             Controls.Add(button7);
             Controls.Add(textBox1);
             Controls.Add(listBox1);
-            Controls.Add(button5);
-            Controls.Add(button1);
-            Controls.Add(button2);
             ForeColor = SystemColors.ActiveCaptionText;
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             Name = "Form2";
             Text = "Form2";
             FormClosed += Form2_FormClosed;
             Shown += Form2_Shown;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -203,5 +269,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button buttonMin;
+        private Button buttonClose;
+        private Panel panel1;
+        private Label lblName;
     }
 }

@@ -168,5 +168,20 @@ namespace Pocket
                 this.Text = form2text + " " + DateTime.Now.ToString("dd.MM.yyyy") + " Pocket 1.0";
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -33,3 +33,4 @@ D:\Documents\GitHub\Pocket\Pocket\Pocket\obj\Debug\net10.0-windows\refint\Pocket
 D:\Documents\GitHub\Pocket\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.pdb
 D:\Documents\GitHub\Pocket\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.genruntimeconfig.cache
 D:\Documents\GitHub\Pocket\Pocket\Pocket\obj\Debug\net10.0-windows\ref\Pocket.dll
+D:\Documents\GitHub\Pocket\Pocket\Pocket\obj\Debug\net10.0-windows\Pocket.Properties.Resources.resources
