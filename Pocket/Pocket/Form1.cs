@@ -8,6 +8,7 @@ namespace Pocket
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -25,6 +26,8 @@ namespace Pocket
             Form2 form2 = new Form2();
             string ad = textBox1.Text + " " + DateTime.Now.ToString("dd.MM.yyyy") + " Pocket 1.0";
             form2.Text = ad;
+            Form3 form3 = new Form3();
+            form3.Text = ad;
             if (onoff)
             {
                 MessageBox.Show("Hali Hazýrda Bir Liste Açýk.", "Pocket", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -34,7 +37,13 @@ namespace Pocket
                 form2.Show();
                 this.Hide();
             }
-            else
+            else if(radioButton2.Checked)
+            {
+                
+                form3.Show();
+                this.Hide();
+            }
+            else 
             {
 
             }

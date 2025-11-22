@@ -86,7 +86,9 @@
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.FromArgb(64, 64, 64);
             listBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            listBox1.ForeColor = SystemColors.Control;
             listBox1.FormattingEnabled = true;
             listBox1.Items.AddRange(new object[] { "Yazdıklarınız Burda Gözükür." });
             listBox1.Location = new Point(27, 80);
@@ -96,6 +98,8 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.FromArgb(64, 64, 64);
+            textBox1.ForeColor = SystemColors.Control;
             textBox1.Location = new Point(292, 157);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(274, 27);
@@ -149,7 +153,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label1.Location = new Point(437, 537);
+            label1.Location = new Point(436, 568);
             label1.Name = "label1";
             label1.Size = new Size(149, 25);
             label1.TabIndex = 10;
@@ -212,6 +216,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(598, 46);
             panel1.TabIndex = 12;
+            panel1.MouseDown += panel1_MouseDown;
             // 
             // lblName
             // 
@@ -244,6 +249,7 @@
             Controls.Add(listBox1);
             ForeColor = SystemColors.ActiveCaptionText;
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form2";
             Text = "Form2";

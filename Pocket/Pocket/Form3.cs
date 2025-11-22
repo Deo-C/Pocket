@@ -3,21 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Printing;
-using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
 namespace Pocket
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
-
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HTCAPTION = 0x2;
 
@@ -40,17 +37,17 @@ namespace Pocket
 
         private void Form2_Shown(object sender, EventArgs e)
         {
-            string date = DateTime.Now.ToString("dd.MM.yyyy H:mm");
-            label1.Text = date;
+            string dat = DateTime.Now.ToString("dd.MM.yyyy H:mm");
+            label1.Text = dat;
             lblName.Text = this.Text;
         }
 
         private void button7_Click(object sender, EventArgs e) //Arama İşlemi
         {
             string name = textBox1.Text;
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                if (listBox1.Items[i].ToString() == name)
+                if (checkedListBox1.Items[i].ToString() == name)
                 {
                     if (name.Length <= 12)
                     {
@@ -64,7 +61,7 @@ namespace Pocket
                 }
                 else
                 {
-                    if (i == listBox1.Items.Count - 1)
+                    if (i == checkedListBox1.Items.Count - 1)
                     {
                         if (name.Length <= 12)
                         {
@@ -81,15 +78,15 @@ namespace Pocket
 
         private void button8_Click(object sender, EventArgs e) //Ekleme İşlemi
         {
-            if (listBox1.Items.Contains("Yazdıklarınız Burda Gözükür."))
+            if (checkedListBox1.Items.Contains("Yazdıklarınız Burda Gözükür."))
             {
-                listBox1.Items.Remove("Yazdıklarınız Burda Gözükür.");
+                checkedListBox1.Items.Remove("Yazdıklarınız Burda Gözükür.");
             }
             label3.Text = "";
             string name = textBox1.Text;
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                if (listBox1.Items[i].ToString() == name)
+                if (checkedListBox1.Items[i].ToString() == name)
                 {
                     if (name.Length <= 12)
                     {
@@ -105,27 +102,27 @@ namespace Pocket
 
             }
 
-            if (!listBox1.Items.Contains(name))
+            if (!checkedListBox1.Items.Contains(name))
             {
-                listBox1.Items.Add(name);
+                checkedListBox1.Items.Add(name);
             }
         }
 
         private void button9_Click(object sender, EventArgs e) //Silme İşlemi
         {
             string name = textBox1.Text;
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
-                if (listBox1.Items[i].ToString() == name)
+                if (checkedListBox1.Items[i].ToString() == name)
                 {
-                    listBox1.Items.Remove(name);
+                    checkedListBox1.Items.Remove(name);
                     break;
                 }
-                if (i == listBox1.Items.Count - 1)
+                if (i == checkedListBox1.Items.Count - 1)
                 {
-                    if (listBox1.SelectedIndex != -1)
+                    if (checkedListBox1.SelectedIndex != -1)
                     {
-                        listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+                        checkedListBox1.Items.RemoveAt(checkedListBox1.SelectedIndex);
                         label3.Text = "";
                         break;
                     }
@@ -148,13 +145,13 @@ namespace Pocket
         private void button10_Click(object sender, EventArgs e) //Düzenleme İşlemi
         {
             string dz = textBox1.Text;
-            if (listBox1.Items.Contains(dz))
+            if (checkedListBox1.Items.Contains(dz))
             {
-                int index = listBox1.Items.IndexOf(dz);
+                int index = checkedListBox1.Items.IndexOf(dz);
                 string newName = Microsoft.VisualBasic.Interaction.InputBox("Seçili Yazıyı Düzenleyin : ", "Düzenle", dz);
                 if (!string.IsNullOrWhiteSpace(newName))
                 {
-                    listBox1.Items[index] = newName;
+                    checkedListBox1.Items[index] = newName;
                 }
             }
             else
@@ -203,6 +200,13 @@ namespace Pocket
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            string date = DateTime.Now.ToString("dd.MM.yyyy H:mm");
+            label1.Text = date;
+            
         }
     }
 }
