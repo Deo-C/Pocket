@@ -59,6 +59,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(27, 151);
             label1.Name = "label1";
             label1.Size = new Size(93, 25);
@@ -80,6 +81,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(27, 205);
             label2.Name = "label2";
             label2.Size = new Size(101, 25);
@@ -90,6 +92,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label3.ForeColor = SystemColors.Control;
             label3.Location = new Point(27, 23);
             label3.Name = "label3";
             label3.Size = new Size(211, 81);
@@ -101,6 +104,7 @@
             radioButton1.AutoSize = true;
             radioButton1.Checked = true;
             radioButton1.Font = new Font("Segoe UI", 10.8F);
+            radioButton1.ForeColor = SystemColors.Control;
             radioButton1.Location = new Point(140, 205);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(137, 29);
@@ -113,6 +117,7 @@
             // 
             radioButton2.AutoSize = true;
             radioButton2.Font = new Font("Segoe UI", 10.8F);
+            radioButton2.ForeColor = SystemColors.Control;
             radioButton2.Location = new Point(293, 205);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(143, 29);

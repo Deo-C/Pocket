@@ -180,7 +180,8 @@ namespace Pocket
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form4 form4 = new Form4();
+            form4.Show();
         }
 
         private void buttonMin_Click(object sender, EventArgs e)
@@ -206,7 +207,8 @@ namespace Pocket
         {
             string date = DateTime.Now.ToString("dd.MM.yyyy H:mm");
             label1.Text = date;
-            
+
         }
+
     }
 }
